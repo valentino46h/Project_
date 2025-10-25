@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  perspective: 1200px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 42, 42, 0.3);
+}
+
+.logo {
+  font-size: 1.9em;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.logo span {
+  color: #ff2a2a;
+}
+
+nav a {
+  color: #ccc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ff2a2a;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ff2a2a;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1603993097397-89d3e5b5049c?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3.2em;
+  color: #ff2a2a;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  margin-top: 12px;
+  color: #ccc;
+  font-size: 1.1em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ff2a2a;
+}
+
+.btn:hover {
+}
+
+.section-title {
+  text-align: center;
+  margin: 100px 0 40px;
+  font-size: 2.3em;
+  color: #ff2a2a;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 0 8%;
+}
+
+.car-card {
+  background-color: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.car-card:hover {
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ff2a2a;
+}
+
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+.info h3 {
+  color: #ff2a2a;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.info p {
+  color: #ccc;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.hero,
+.navbar,
+footer {
+  position: relative;
+}
+
+.navbar {
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about {
+  text-align: center;
+  padding: 100px 10%;
+  background-color: #111;
+  border-radius: 25px;
+  opacity: 0.95;
+  margin-top: 50px;
+}
+
+.about h2 {
+  color: #ff2a2a;
+  margin-bottom: 15px;
+}
+
+.about p {
+  color: #ddd;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.about-page {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.about-hero {
+  position: relative;
+  height: 70vh;
+  background-image: url("/Mobil_/gambar.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about-content {
+  position: relative;
+  max-width: 800px;
+  padding: 30px;
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.info-card:hover {
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #000;
+  color: #999;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("/Mobil_/gambar1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);/
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #ff3c3c;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ff3c3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #ff1a1a;
+}
+
+.contact-page {
+  background: url("/Mobil_/gambar.jpeg") center/cover no-repeat;
+  position: relative;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.contact-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.contact-page .container {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(20, 20, 20, 0.85);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 60, 60, 0.3);
+}
+
+.contact-page h2 {
+  font-size: 2rem;
+  color: #db1b1b;
+  margin-bottom: 15px;
+}
+
+.contact-page p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 8px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff3c3c;
+  background: #181818;
+  outline: none;
+}
+
+.contact-page .btn {
+  background-color: #ff3c3c;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-page .btn:hover {
+  background-color: #ff1a1a;
+}
